@@ -3,8 +3,9 @@ import mongoose from 'mongoose';
 export const connectDB = async() => {
     try {
         // Usar MongoDB Atlas
-        const uri = process.env.MONGODB_URI || "mongodb+srv://User:User@cluster0.ykx1h.mongodb.net/certicampo?retryWrites=true&w=majority&appName=Cluster0";
-        
+        const uri = process.env.MONGODB_URI ||  "mongodb+srv://root:user@cluster0.vd0vupk.mongodb.net/certicampo?retryWrites=true&w=majority&appName=Cluster0";
+
+       
         await mongoose.connect(uri, {
             serverSelectionTimeoutMS: 5000, // Timeout después de 5 segundos
         });

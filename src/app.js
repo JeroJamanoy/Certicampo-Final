@@ -12,8 +12,8 @@ const app = express();
 
 const allowedOrigins = [
     'http://localhost:5173',
-    'https://certi-campo.vercel.app',
-    'http://localhost:3000'
+    'https://certicampo-final.vercel.app',
+    'http://localhost:4000'
 ];
 
 // Middleware para logging de rutas (debe ir antes de las rutas)

@@ -1,0 +1,125 @@
+.background-login {
+    background-color: #7D2181; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.login-box {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.login-box h1 {
+    color: #7D2181;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.login-box img {
+    width: 120px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #373435;
+    font-size: 1.5rem;
+}
+
+/* !    USER-BOX and PASSWORD-BOX! */
+.user-box, .password-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input, .password-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #373435;
+    border: 1px solid rgba(55, 52, 53, 0.3);
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.user-box input:focus, .password-box input:focus {
+    border-color: #7D2181;
+    box-shadow: 0 0 0 2px rgba(125, 33, 129, 0.2);
+}
+
+/* !    ENTER    ! */
+.button-login {
+    background-color: #7D2181;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 25px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.button-login:hover {
+    background-color: #8f2a94;
+    transform: translateY(-2px);
+}
+
+.button-login:disabled {
+    background-color: #b586b8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Error messages */
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-error {
+    color: #c62828;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .login-box h1 {
+        font-size: 1.75rem;
+    }
+
+    .login-box h2 {
+        font-size: 1.25rem;
+    }
+
+    .login-box img {
+        width: 100px;
+    }
+}
+

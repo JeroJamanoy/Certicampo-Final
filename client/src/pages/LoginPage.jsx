@@ -3,8 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
-import './LoginPage.css'
-import Cookies from 'js-cookie';
+import './LoginPage.css';
 
 
 /* 
@@ -23,8 +22,6 @@ function LoginPage() {
         formState: { errors: formErrors },
     } = useForm();
     const { login, user, errors: authErrors, loading } = useAuth();
-    const token = Cookies.get('token');
-    console.log(token);
     const navigate = useNavigate();
 
 

@@ -99,7 +99,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
     font-size: 14px;
     background-color: transparent;
     color: #EABDE6;
@@ -109,6 +108,10 @@ body {
     .login-box {
         padding: 30px;
         max-width: 300px;
+    }
+
+    .footer-login{
+        padding: 15px;
     }
 }
 

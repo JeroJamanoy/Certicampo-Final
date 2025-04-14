@@ -1,19 +1,9 @@
 import { useAuth } from '../context/AuthContext';
-import { useEffect } from 'react';
 import './Inicio.css';
 
 function Inicio(){
     const { user } = useAuth();
     console.log(user);
-
-    useEffect(() => {
-        document.body.style.backgroundColor = "#f1f1f1";
-        document.body.style.height = "100vh";
-        return () => {
-            document.body.style.backgroundColor = "";
-            document.body.style.height = "";
-        };
-    }, []);
 
     return (
         <div className="inicio">

@@ -35,7 +35,7 @@ function LoginPage() {
     }, [user, navigate]);
 
     useEffect(() => {
-        document.body.style.backgroundColor = "#7D2181";
+        document.body.style.backgroundColor = "#AA60C8";
         
         return () => {
             document.body.style.backgroundColor = "";

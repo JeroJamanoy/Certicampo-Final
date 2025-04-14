@@ -1,42 +1,56 @@
-.background-login {
-    background-color: #7D2181; 
+body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
+    overflow: auto; /* Evita el scroll en la pantalla */
 }
 
-.login-box {
-    background-color: #fefefe;
-    padding: 30px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 400px;
+.background-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; /* Espacio entre login-box y footer */
+    font-family: sans-serif;
+    height: 100vh; /* Ajusta la altura al 100% de la pantalla */
+    width: 100vw; /* Evita desbordamientos laterales */
+}
+
+.error-message {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el login-box */
+    flex-grow: 1; /* Ocupa el espacio disponible sin expandirse */
 }
 
 .login-box h1 {
     color: #7D2181;
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 2rem;
+    margin-bottom: -10px;
 }
 
-.login-box img {
-    width: 120px;
-    height: auto;
-    margin: 20px 0;
+.login-box {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
     color: #373435;
-    font-size: 1.5rem;
 }
 
 /* !    USER-BOX and PASSWORD-BOX! */
@@ -46,87 +60,55 @@
 }
 
 .user-box input, .password-box input {
-    width: 100%;
-    padding: 12px;
+    width: calc(100% - 20px);
+    padding: 10px 0;
+    padding-left: 10px;
     font-size: 16px;
     color: #373435;
-    border: 1px solid rgba(55, 52, 53, 0.3);
-    border-radius: 8px;
+    border: 0.5px solid rgba(55, 52, 53, 0.3);
     outline: none;
     background: transparent;
-    transition: all 0.3s ease;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.3s ease;
+
 }
 
 .user-box input:focus, .password-box input:focus {
-    border-color: #7D2181;
-    box-shadow: 0 0 0 2px rgba(125, 33, 129, 0.2);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* !    ENTER    ! */
-.button-login {
+.button-login{
     background-color: #7D2181;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    padding: 12px 25px;
+    padding: 10px 25px;
     width: 100%;
-    transition: all 0.3s ease;
 }
 
 .button-login:hover {
-    background-color: #8f2a94;
-    transform: translateY(-2px);
-}
-
-.button-login:disabled {
-    background-color: #b586b8;
-    cursor: not-allowed;
-    transform: none;
-}
-
-/* Error messages */
-.error-message {
-    background-color: #ffebee;
-    color: #c62828;
-    border: 1px solid #ef9a9a;
-    border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.form-error {
-    color: #c62828;
-    font-size: 12px;
-    margin-top: 5px;
-    text-align: left;
+    background-color: #AA60C8; /* Cambia el color al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
 
 .footer-login {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+    background-color: transparent;
     color: #EABDE6;
+    text-align: center;
 }
-
-@media (max-width: 480px) {
+@media (min-width: 768px) {
     .login-box {
-        padding: 20px;
-        margin: 15px;
-    }
-
-    .login-box h1 {
-        font-size: 1.75rem;
-    }
-
-    .login-box h2 {
-        font-size: 1.25rem;
-    }
-
-    .login-box img {
-        width: 100px;
+        padding: 30px;
+        max-width: 300px;
     }
 }
 

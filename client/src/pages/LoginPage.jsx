@@ -78,6 +78,11 @@ function LoginPage() {
                     </button>
                 </form>
             </div>
+            
+            <div className="footer-login">
+                <p>@2025 Jerónimo Jamanoy. All rights reserved.</p>
+                <p>¿Problemas para ingresar? Contáctanos en soporte@certicampo.com</p>
+            </div>
         </div>
     )
 }

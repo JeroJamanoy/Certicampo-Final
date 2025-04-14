@@ -104,6 +104,13 @@
     text-align: left;
 }
 
+.footer-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #EABDE6;
+}
+
 @media (max-width: 480px) {
     .login-box {
         padding: 20px;

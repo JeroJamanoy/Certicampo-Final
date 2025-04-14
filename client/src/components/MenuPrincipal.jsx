@@ -1,12 +1,13 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useState, useEffect } from 'react';
+import logo from '../assets/Logo.png'
 import './MenuPrincipal.css';
 
 function MenuPrincipal() {
     const { user, logout } = useAuth();
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
     const navigate = useNavigate();
 
     const toggleMenu = () => {
@@ -26,8 +27,8 @@ function MenuPrincipal() {
     // Detectar cambios en tamaño de ventana
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-            if (window.innerWidth > 768) {
+            setIsMobile(window.innerWidth <= 1000);
+            if (window.innerWidth > 1000) {
                 setMenuOpen(false);
             }
         };
@@ -45,7 +46,7 @@ function MenuPrincipal() {
         <nav className="navbar">
             <div className="logo">
                 <Link to="/inicio">
-                    <img src="src/assets/Logo.png" alt="CertiCampo Logo" />
+                    <img src={logo} alt="CertiCampo Logo" />
                     <span>CertiCampo</span>
                 </Link>
             </div>
@@ -74,13 +75,12 @@ function MenuPrincipal() {
                         Cerrar Sesión
                     </button>
                 </div>
-                
-                {isMobile && (
-                    <div className="menu-btn" onClick={toggleMenu}>
-                        <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
-                    </div>
-                )}
             </div>
+            {isMobile && (
+                <div className="menu-btn" onClick={toggleMenu}>
+                    <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                </div>
+            )}
         </nav>
     );
 }

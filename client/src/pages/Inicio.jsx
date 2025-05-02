@@ -11,7 +11,7 @@ function Inicio(){
             <div className="announcements-container">
                 <div className="grid">
                     <div>
-                        <article className="card">
+                        <article className="card-inicio">
                             <h2>Reporte de Actualizaciones</h2>
                             <button onClick={() => window.location.href = 'https://docs.google.com/document/d/1ESveUuVNmCXq3F4CJSjKMhJHCUtqaziQiT--sX5cym8/edit?usp=sharing'}>
                                 <img src="https://img.icons8.com/?size=100&id=84011&format=png&color=000000" alt="icon-report" />
@@ -20,7 +20,7 @@ function Inicio(){
                         </article>
                     </div>
                     <div className="primary">
-                        <article className="card">
+                        <article className="card-inicio">
                             <h2>Tutorial para usar la aplicación</h2>
                             <iframe 
                                 width="250" 
@@ -35,7 +35,7 @@ function Inicio(){
                         </article>
                     </div>
                     <div>
-                        <article className="card">
+                        <article className="card-inicio">
                             <h2>Tus Eventos</h2>
                             <img src="https://img.icons8.com/?size=100&id=10053&format=png&color=000000" alt="icon-calendary"/>
                             <span>Apuntate a los proximos eventos que tendremos para que mejores tus habilidades y conocimientos.</span>

@@ -214,13 +214,59 @@
     padding: 2rem;
     border-radius: 8px;
     width: 90%;
+    height: 90%;
     max-width: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto
 }
 
 .modal-content h2 {
     margin-bottom: 1.5rem;
     color: #333;
+}
+
+
+.plantillas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.card {
+    width: 100px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 12px 12px;
+}
+
+.explicativo-plantillas-parrafo a{
+    font-size: 0.9rem;
+    color: #7D2181;
+    margin-top: 1rem;   
 }
 
 .form-group {

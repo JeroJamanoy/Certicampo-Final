@@ -31,7 +31,7 @@
     width: 100%;
 }
 
-.inicio .announcements-container .grid .card {
+.inicio .announcements-container .grid .card-inicio {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -46,12 +46,12 @@
     overflow: hidden;
 }
 
-.inicio .announcements-container .grid .card:hover {
+.inicio .announcements-container .grid .card-inicio:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.inicio .announcements-container .grid .card::before {
+.inicio .announcements-container .grid .card-inicio::before {
     content: '';
     position: absolute;
     top: 0;
@@ -61,7 +61,7 @@
     background-color: #7D2181;
 }
 
-.inicio .announcements-container .grid .card button {
+.inicio .announcements-container .grid .card-inicio button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -73,7 +73,7 @@
     justify-content: center;
 }
 
-.inicio .announcements-container .grid .card span {
+.inicio .announcements-container .grid .card-inicio span {
     padding-top: 20px;
     text-align: center;
     color: #333;
@@ -81,7 +81,7 @@
     font-weight: 500;
 }
 
-.inicio .announcements-container .grid .card h2 {
+.inicio .announcements-container .grid .card-inicio h2 {
     padding-bottom: 20px;
     text-align: center;
     color: #7D2181;
@@ -89,7 +89,7 @@
     font-weight: 600;
 }
 
-.inicio .announcements-container .grid .card iframe {
+.inicio .announcements-container .grid .card-inicio iframe {
     width: 100%;
     height: auto;
     max-width: 250px;
@@ -111,7 +111,7 @@
         gap: 20px;
     }
     
-    .inicio .announcements-container .grid .card {
+    .inicio .announcements-container .grid .card-inicio {
         height: 300px;
         padding: 20px;
     }
@@ -122,15 +122,15 @@
         font-size: 1.8rem;
     }
     
-    .inicio .announcements-container .grid .card {
+    .inicio .announcements-container .grid .card-inicio {
         height: 280px;
     }
     
-    .inicio .announcements-container .grid .card h2 {
+    .inicio .announcements-container .grid .card-inicio h2 {
         font-size: 1.3rem;
     }
     
-    .inicio .announcements-container .grid .card span {
+    .inicio .announcements-container .grid .card-inicio span {
         font-size: 1rem;
     }
 }

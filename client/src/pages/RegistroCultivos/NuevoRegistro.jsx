@@ -16,6 +16,7 @@ function NuevoRegistro(){
         console.log(data);
         alert('Registro exitoso');
     });
+    
 
     return (
         <div className='background-nuevo-registro'>

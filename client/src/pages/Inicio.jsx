@@ -13,7 +13,7 @@ function Inicio(){
                     <div>
                         <article className="card-inicio">
                             <h2>Reporte de Actualizaciones</h2>
-                            <button onClick={() => window.location.href = 'https://docs.google.com/document/d/1ESveUuVNmCXq3F4CJSjKMhJHCUtqaziQiT--sX5cym8/edit?usp=sharing'}>
+                            <button onClick={() => window.open('https://docs.google.com/document/d/1ESveUuVNmCXq3F4CJSjKMhJHCUtqaziQiT--sX5cym8/edit?usp=sharing', '_blank')}>
                                 <img src="https://img.icons8.com/?size=100&id=84011&format=png&color=000000" alt="icon-report" />
                             </button>
                             <span>Informate de todas las ultimas funciones que se acaban de incorporar a la aplicación.</span>

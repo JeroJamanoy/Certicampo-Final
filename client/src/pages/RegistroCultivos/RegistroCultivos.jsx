@@ -5,7 +5,7 @@ import calibracion from '../../assets/Imagenes_Plantillas/Calibracion_Verificaci
 import fertilizantesFoliares from '../../assets/Imagenes_Plantillas/Inventario_de_Fertilizantes_Foliares_y_Bioestimulantes.webp';
 import fertilizantesEdaficos from '../../assets/Imagenes_Plantillas/Inventario_de_Fertilizantes_Edaficos.webp';
 import productos from '../../assets/Imagenes_Plantillas/Inventario_de_Productos_Fitosanitarios.webp';
-import plagasEnfermedades from '../../assets/Imagenes_Plantillas/Monitoreo_de_Plagas_y_Enfermedades.webp';
+import plagasEnfermedades from '../../assets/Imagenes_Plantillas/Monitoreo_de_Plagas_y_enfermedades.webp';
 import registroAplicacionFertilizantes from '../../assets/Imagenes_Plantillas/Registro_de_Aplicacion_de_Fertilizantes_y_Enmiendas.webp';
 import registroAplicacionFitosanitarios from '../../assets/Imagenes_Plantillas/Registro_de_Aplicaciones_Fitosanitarias_y_Foliares.webp';
 
